@@ -39,4 +39,26 @@ h1, h2, h3, h4 {
 img {
   border: 0; }
 
+header {
+  background-color: red; }
+
+main {
+  background-color: blue; }
+
+footer {
+  background-color: green; }
+
+header,
+main,
+footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  header::after,
+  main::after,
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 /*# sourceMappingURL=application.css.map */
