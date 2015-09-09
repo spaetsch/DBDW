@@ -1,1 +1,27 @@
-
+header,
+nav,
+main,
+footer,
+.hero {
+  @include outer-container;
+}
+nav ul {
+  text-align: center;
+  line-height: 3em;
+  font-size: 1.5em;
+}
+nav ul li {
+  @include span-columns(6);
+  @media (min-width: $breakpoint-sm){
+    @include span-columns(3);
+  }
+  display: inline;
+}
+nav ul li a {
+  text-decoration: none;
+  margin-left: 0.25em;
+  text-align: center;
+  @media (min-width: $breakpoint-med){
+    margin-left: 1em;
+  }
+}
