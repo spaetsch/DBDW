@@ -36,6 +36,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 header {
   background-color: red; }
 
@@ -72,34 +76,95 @@ footer,
     content: "";
     display: table; }
 
-nav ul {
-  text-align: center;
-  line-height: 3em;
-  font-size: 1.5em; }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
 
-nav ul li {
-  float: left;
+.main-header {
+  margin: auto;
+  width: 75%;
+  min-height: 90px;
+  padding: 1em 2em;
+  border: 2px solid #2675a9;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  background: #2980b9; }
+
+.main-header:after {
+  content: " ";
+  display: table;
+  clear: both; }
+
+.logo {
   display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  display: inline; }
-  nav ul li:last-child {
-    margin-right: 0; }
-  @media (min-width: 40em) {
-    nav ul li {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 23.23176%; }
-      nav ul li:last-child {
-        margin-right: 0; } }
-
-nav ul li a {
   text-decoration: none;
-  margin-left: 0.25em;
-  text-align: center; }
-  @media (min-width: 64em) {
-    nav ul li a {
-      margin-left: 1em; } }
+  float: left;
+  margin-top: 5px; }
+
+.logo::before {
+  color: #fff;
+  content: "\e001";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.5em;
+  font-family: "icomoon";
+  -webkit-font-smoothing: antialiased; }
+
+/* Nav Demo Styles -------------------- */
+.main-nav,
+.drop-nav {
+  background: #2c3e50; }
+
+.main-nav {
+  float: right;
+  border-radius: 4px;
+  margin-top: 8px;
+  border: solid 1px #1e2a36; }
+
+.main-nav > li {
+  float: left;
+  border-left: solid 1px #1e2a36; }
+
+.main-nav li:first-child {
+  border-left: none; }
+
+.main-nav a {
+  color: #fff;
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none; }
+
+.dropdown,
+.flyout {
+  position: relative; }
+
+.dropdown:after {
+  content: "\25BC";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 12%; }
+
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none; }
+
+.drop-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.dropdown:hover > .drop-nav,
+.flyout:hover > .flyout-nav {
+  display: block; }
+
+.flyout-nav {
+  left: 100%;
+  top: 0; }
+
+.flyout:hover a,
+.flyout-nav {
+  background: #395066; }
 
 /*# sourceMappingURL=application.css.map */
