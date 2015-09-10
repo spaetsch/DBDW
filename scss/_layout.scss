@@ -17,11 +17,11 @@ ul {
   padding: 0;
   margin: 0;
 }
-.main-header:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
+// .main-header:after {
+//   content: " ";
+//   display: table;
+//   clear: both;
+// }
 
 .logo {
   display: block;
@@ -63,4 +63,12 @@ ul {
   left: 100%;
   top: 0;
 }
+
+// carousel
+
+.main-carousel {
+  margin: 0 3em;
+  padding: 2em 0;
+}
+
 

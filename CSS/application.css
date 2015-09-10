@@ -41,21 +41,9 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-header {
-  background-color: red; }
-
-main {
-  background-color: purple; }
-
 .hero {
   background: url(../img/slantyarn-950x1024.jpg) center center no-repeat fixed;
   background-size: cover; }
-
-footer {
-  background-color: green; }
-
-nav li {
-  background-color: white; }
 
 body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
@@ -81,11 +69,6 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0; }
-
-.main-header:after {
-  content: " ";
-  display: table;
-  clear: both; }
 
 .logo {
   display: block;
@@ -118,6 +101,10 @@ ul {
 .flyout-nav {
   left: 100%;
   top: 0; }
+
+.main-carousel {
+  margin: 0 3em;
+  padding: 2em 0; }
 
 /* Slider */
 .slick-slider {
@@ -270,7 +257,7 @@ ul {
 
 .slick-dots {
   position: absolute;
-  bottom: -45px;
+  bottom: -2px;
   list-style: none;
   display: block;
   text-align: center;
@@ -345,5 +332,17 @@ ul {
 
 main p {
   color: white; }
+
+footer {
+  background-color: green; }
+
+header {
+  background-color: red; }
+
+main {
+  background-color: gray; }
+
+.img-carousel {
+  background-color: yellow; }
 
 /*# sourceMappingURL=application.css.map */

@@ -3,24 +3,15 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: red;
-}
-main {
-  background-color: purple;
-}
+
 
 .hero {
     background: url(../img/slantyarn-950x1024.jpg) center center no-repeat fixed;
     background-size: cover;
 }
 
-footer {
-  background-color: green;
-}
-nav li {
-  background-color: white;
-}
+
+
 body {
   font-family: $helvetica;
 }
