@@ -1,0 +1,31 @@
+// header and nav
+// based on treehouse css dropdown menu tutorial
+// http://blog.teamtreehouse.com/create-simple-css-dropdown-menu
+// refactored for Sass and customized
+.main-header {
+  background: #2980b9;
+}
+.main-nav,
+.drop-nav {
+  background: #2c3e50;
+}
+.drop-nav li {
+  border-bottom: 1px solid rgba(255,255,255,.2);
+}
+.flyout:hover a,
+.flyout-nav {
+  background: #395066;
+}
+.main-nav {
+  border: solid 1px #1e2a36;
+  & > li {
+    border-left: solid 1px #1e2a36;
+  }
+  & li:first-child {
+    border-left: none;
+  }
+  & a {
+    color: #fff;
+    text-decoration: none;
+  }
+}
