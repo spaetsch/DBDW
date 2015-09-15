@@ -102,6 +102,12 @@ ul {
   margin: 0 3em;
   padding: 2em 0; }
 
+.slick-slide img {
+  height: 250px; }
+  @media (min-width: 40em) {
+    .slick-slide img {
+      height: 600px; } }
+
 /* Slider */
 .slick-slider {
   position: relative;
