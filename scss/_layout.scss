@@ -58,6 +58,7 @@ ul {
 .dropdown:hover > .drop-nav,
 .flyout:hover > .flyout-nav {
   display: block;
+  z-index: 5000;  // to fix dropdown and flyout appearing behind carousel
 }
 .flyout-nav {
   left: 100%;

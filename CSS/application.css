@@ -92,7 +92,8 @@ ul {
 
 .dropdown:hover > .drop-nav,
 .flyout:hover > .flyout-nav {
-  display: block; }
+  display: block;
+  z-index: 5000; }
 
 .flyout-nav {
   left: 100%;
