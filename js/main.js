@@ -1,8 +1,9 @@
 $(document).ready(function(){
-  $('.main-carousel').slick({
+  $('.carousel').slick({
   infinite: true,
   slidesToShow: 1,
-  autoplay: true,
+  //autoplay: true,
   dots: true,
-  speed: 450 });
+  adaptiveHeight: true,
+  speed: 500 });
 });

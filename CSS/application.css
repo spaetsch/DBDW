@@ -41,10 +41,6 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.hero {
-  background: url(../img/slantyarn-950x1024.jpg) center center no-repeat fixed;
-  background-size: cover; }
-
 body {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
 
@@ -102,7 +98,7 @@ ul {
   left: 100%;
   top: 0; }
 
-.main-carousel {
+.carousel {
   margin: 0 3em;
   padding: 2em 0; }
 
@@ -257,7 +253,7 @@ ul {
 
 .slick-dots {
   position: absolute;
-  bottom: -2px;
+  bottom: -15px;
   list-style: none;
   display: block;
   text-align: center;
@@ -342,7 +338,7 @@ header {
 main {
   background-color: gray; }
 
-.img-carousel {
+.carousel-img {
   background-color: yellow; }
 
 /*# sourceMappingURL=application.css.map */
